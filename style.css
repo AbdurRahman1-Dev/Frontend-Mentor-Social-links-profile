@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* colors */
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-color-for {
+  color: hsl(75, 94%, 57%);
+}
+.primary-color-bg-back {
+  background-color: hsl(75, 94%, 57%);
+}
+
+.secondary-bg-color-front {
+  background-color: hsl(0, 0%, 20%);
+}
+.secondary-bg-color-back {
+  background-color: hsl(0, 0%, 12%);
+}
+
+/* typography */
+
+.test-base {
+  font-size: 14px;
+}
+
+/* card style */
+.container {
+  max-width: 350px;
+  background-color: hsl(0, 0%, 12%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+.my-info > h1 {
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+.bio {
+  margin: 10px 0px;
+}
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-links {
+  background-color: hsl(0, 0%, 20%);
+  padding: 13px;
+  border-radius: 7px;
+}
+
+.social-links > a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.social-links:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+  transition-duration: 300ms;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0px auto;
+    margin: 0 10px;
+  }
+}
